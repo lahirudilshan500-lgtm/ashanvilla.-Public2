@@ -1,0 +1,5 @@
+# Apache server protection for saved form data. Keep this file if your host uses Apache.
+<FilesMatch "^(bookings|contact-messages)\.csv$">
+  Require all denied
+</FilesMatch>
+Options -Indexes

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashan Villa - Room 2</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Room Description */
+        .description {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Image Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .caption {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ashan Villa</h1>
+        <p>Room 2 - Comfort & Elegance</p>
+    </header>
+
+    <main class="container">
+        <p class="description">
+            Welcome to Room 2 at Ashan Villa. Enjoy a spacious room featuring a comfortable double bed with vibrant decor, a dedicated tea/coffee station, and a unique, rustic open-concept bathroom.
+        </p>
+
+        <div class="gallery">
+            <!-- Image 1: Bed View -->
+            <div class="gallery-item">
+                <img src="images/room1.jpg" alt="Ashan Villa Room 2 - Main Bed View">
+                <div class="caption">Main Bed Area</div>
+            </div>
+
+            <!-- Image 2: Tea/Coffee Station -->
+            <div class="gallery-item">
+                <img src="images/room2.jpg" alt="Ashan Villa Room 2 - Tea and Coffee Station">
+                <div class="caption">In-Room Tea & Coffee Station</div>
+            </div>
+
+            <!-- Image 3: Room Overview -->
+            <div class="gallery-item">
+                <img src="images/room3.jpg" alt="Ashan Villa Room 2 - Room Overview">
+                <div class="caption">Spacious Room Overview</div>
+            </div>
+
+            <!-- Image 4: Room and Wardrobe -->
+            <div class="gallery-item">
+                <img src="images/room4.jpg" alt="Ashan Villa Room 2 - Wardrobe and Seating">
+                <div class="caption">Wardrobe & Seating Area</div>
+            </div>
+
+            <!-- Image 5: Bathroom Overview -->
+            <div class="gallery-item">
+                <img src="images/bathroom1.jpg" alt="Ashan Villa Room 2 - Bathroom Overview">
+                <div class="caption">Unique Rustic Bathroom</div>
+            </div>
+
+            <!-- Image 6: Bathroom Vanity -->
+            <div class="gallery-item">
+                <img src="images/bathroom2.jpg" alt="Ashan Villa Room 2 - Bathroom Vanity">
+                <div class="caption">Bathroom Vanity & Shower</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ashan Villa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
